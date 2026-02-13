@@ -1,9 +1,4 @@
+#!/usr/bin/env python3
 import sys
 
-if len(sys.argv) != 3:
-    print("none")
-else:
-    text = sys.argv[2]
-    fnd = sys.argv[1]
-    count = text.count(fnd)
-    print(count)
+a = sys.argv; print(a[2].count(a[1]) if len(a) == 3 else "none")
